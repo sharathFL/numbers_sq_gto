@@ -1,0 +1,22 @@
+stages:
+  prepare:
+    cmd: python src/dummy/prepare.py
+    deps:
+      - src/dummy/prepare.py
+      - params.yaml
+    outs:
+      - data/numbers.txt
+  process:
+    cmd: python src/dummy/process.py
+    deps:
+      - src/dummy/process.py
+      - data/numbers.txt
+    outs:
+      - data/squared_numbers.txt
+  summarize:
+    cmd: python src/dummy/summarize.py
+    deps:
+      - src/dummy/summarize.py
+      - data/squared_numbers.txt
+    outs:
+      - data/summary.txt

@@ -1,0 +1,29 @@
+version: "3"
+services:
+  gto:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - /mnt/data1Tb/workspace/sharath/gto_testing/number_sq:/code
+      - /mnt/data1Tb/number_data:/data
+
+      
+
+    network_mode: host
+
+    command:
+      - /bin/bash
+      - -c
+      - |
+          ls &&
+          tail -f /dev/null
+    
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

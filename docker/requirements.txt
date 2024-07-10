@@ -1,0 +1,13 @@
+xarray
+scipy
+requests
+librosa
+pyyaml
+numpy<=1.24.3,>=1.22
+tensorflow==2.13
+scikit-learn
+keras-tuner
+tensorboard
+grpcio>=1.48.2
+typing-extensions<4.6.0,>=3.6.6
+dvc
