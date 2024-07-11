@@ -9,7 +9,7 @@ y = data['y']
 
 # Train model
 model = LinearRegression()
-model.fit(X, y)
+model.fit(X*3, y)
 
 # Save model
 joblib.dump(model, 'model.joblib')
