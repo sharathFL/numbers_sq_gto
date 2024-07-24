@@ -8,6 +8,7 @@ services:
     volumes:
       - /mnt/data1Tb/workspace/sharath/gto_testing/number_sq:/code
       - /mnt/data1Tb/number_data:/data
+      - /mnt/data1Tb/gto_data_remote:/remote
 
       
 

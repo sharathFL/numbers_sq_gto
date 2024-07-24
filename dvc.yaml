@@ -35,3 +35,18 @@ stages:
       - /code/data/data.csv
     outs:
       - model_v4.joblib
+    
+
+  train_model_v5:
+    cmd: python src/train_model_v5.py
+    deps:
+      - src/train_model_v5.py
+      - /code/data/data.csv
+    outs:
+      - /code/models/model_v5.joblib
+
+artifacts:
+  model:
+    path: models/model_v5.joblib
+    type: model
+    desc: "Random Forest model version 1"

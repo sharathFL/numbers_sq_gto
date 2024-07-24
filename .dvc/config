@@ -1,0 +1,4 @@
+[core]
+    remote = gto_remote
+['remote "gto_remote"']
+    url = /remote
