@@ -85,10 +85,10 @@ stages:
       size: 3661
     - path: src/train_model_v5.py
       hash: md5
-      md5: 285acf9d7cf17e12c7a1ba6c05044adb
-      size: 429
+      md5: 5828d180555010ca0cd7a8fdf3a7e545
+      size: 431
     outs:
     - path: models/wip_1_model.joblib
       hash: md5
-      md5: db5f70bb76654b44082576492dce4c71
+      md5: d2109b7f8acaa5471f23b1dd74b9670f
       size: 848
