@@ -10,9 +10,9 @@ y = data['y']
 # Train model with a slight modification
 model = LinearRegression()
 # model.fit(X, y)
-model.fit(X*X*X*X,y)
+model.fit(X*X*X*X*X*X*X,y)
 print("Intercept:", model.intercept_)
 print("Coefficient:", model.coef_)
 
 # Save model
-joblib.dump(model, '/code/models/model_v5.joblib')
+joblib.dump(model, '/code/models/wip_model.joblib')
