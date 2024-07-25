@@ -43,10 +43,10 @@ stages:
       - src/train_model_v5.py
       - /code/data/data.csv
     outs:
-      - /code/models/wip_model.joblib
+      - /code/models/wip_1_model.joblib
 
 artifacts:
   model:
-    path: models/wip_model.joblib
+    path: models/wip_1_model.joblib
     type: model
     desc: "Random Forest model version 1"

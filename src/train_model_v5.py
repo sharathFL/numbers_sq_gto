@@ -15,4 +15,4 @@ print("Intercept:", model.intercept_)
 print("Coefficient:", model.coef_)
 
 # Save model
-joblib.dump(model, '/code/models/wip_model.joblib')
+joblib.dump(model, '/code/models/wip_1_model.joblib')
